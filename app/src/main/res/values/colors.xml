@@ -10,5 +10,5 @@
     <color name="pink">#F469A9</color>
     <color name="blue">#888Ef5</color>
     <color name="PrimaryLight">#E9F8F1</color>
-
+    <color name="colorBackground">#EBEBEB</color>
 </resources>
