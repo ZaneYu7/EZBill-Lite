@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1021519503091",
+    "project_id": "ezbill-9eaa7",
+    "storage_bucket": "ezbill-9eaa7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1021519503091:android:314f3b7296d64932f2a186",
+        "android_client_info": {
+          "package_name": "com.example.my_application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1021519503091-kdpm2cs4sjke5lm75lpdeq27ca3hgih6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2DX80jCvCofBuu-wALR5hVd5clDsJQwA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1021519503091-kdpm2cs4sjke5lm75lpdeq27ca3hgih6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
