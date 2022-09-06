@@ -6,4 +6,6 @@
     <string name="zane">Zane</string>
     <string name="finance">Finance</string>
     <string name="roommate">Roommate</string>
+    <string name="water_bill">Water bill</string>
+    <string name="electricity_bill">Electricity bill</string>
 </resources>

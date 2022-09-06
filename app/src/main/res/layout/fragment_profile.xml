@@ -6,12 +6,14 @@
     android:background="#7EC8E3"
     tools:context=".ProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="Profile Fragment"
-        android:textSize="26dp"
-        android:layout_gravity="center"/>
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
 
 </FrameLayout>

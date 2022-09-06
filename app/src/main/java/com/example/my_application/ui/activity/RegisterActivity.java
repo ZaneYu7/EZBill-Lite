@@ -46,9 +46,6 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
         editTextPassword = (EditText) findViewById(R.id.password);
         editTextRePassword = (EditText) findViewById(R.id.rePassword);
 
-       // initView();
-       // initEvent();
-        //setTitle("Register");
         setUpToolBar();
     }
 
