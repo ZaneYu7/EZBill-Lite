@@ -16,6 +16,24 @@
         android:theme="@style/Theme.My_Application"
         tools:targetApi="31">
         <activity
+            android:name=".ui.activity.ElectricityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.WaterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.RoommateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.FinanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.activity.MainActivity"
             android:exported="false" />
         <activity
