@@ -1,32 +1,20 @@
 package com.example.my_application.ui.activity;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.provider.ContactsContract;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.example.my_application.HomeFragment;
-import com.example.my_application.ProfileFragment;
 import com.example.my_application.R;
-import com.example.my_application.SettingFragment;
-import com.example.my_application.databinding.ActivityMainBinding;
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.utils.ColorTemplate;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationBarView;
-import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 
@@ -67,7 +55,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
         settingBtn = (LinearLayout) findViewById(R.id.layoutSetting);
         settingBtn.setOnClickListener(this);
-
+/*
         //logout function
         logout = (Button) findViewById(R.id.logOut);
         logout.setOnClickListener(new View.OnClickListener() {
@@ -77,7 +65,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(HomeActivity.this, LoginActivity.class));
             }
         });
-
+*/
         //barchart view
         BarChart barChart = findViewById(R.id.barchart);
 

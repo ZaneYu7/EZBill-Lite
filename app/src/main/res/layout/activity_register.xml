@@ -7,13 +7,13 @@
     android:background="@drawable/login"
     android:orientation="vertical"
     tools:context=".ui.activity.RegisterActivity">
-    <include layout="@layout/common_toolbar"/>
+
 
     <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="60dp"
         android:text="EzBill"
         android:textColor="#ffffff"
         android:textSize="48sp"
@@ -41,7 +41,7 @@
         android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:background="#E6E6E6"
@@ -54,7 +54,7 @@
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:background="#E6E6E6"
@@ -67,7 +67,7 @@
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:background="#E6E6E6"
@@ -81,7 +81,7 @@
         android:id="@+id/rePassword"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:background="#E6E6E6"

@@ -24,7 +24,7 @@ import java.util.Locale;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private TextView register;
+    private TextView register, forgotPassword;
     private EditText editTextEmail, editTextPassword;
     private Button btn_login;
 
@@ -48,6 +48,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         progressBar = (ProgressBar) findViewById(R.id.progressbar);
 
         mAuth = FirebaseAuth.getInstance();
+
+        forgotPassword = (TextView) findViewById(R.id.resetPassword);
+        forgotPassword.setOnClickListener(this);
     }
 
     @Override
@@ -58,6 +61,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.logIn:
                 userLogin();
+                break;
+            case R.id.resetPassword:
+                startActivity(new Intent(this, ForgotPassword.class));
                 break;
         }
     }
