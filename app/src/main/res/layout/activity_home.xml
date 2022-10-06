@@ -151,7 +151,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/layoutWater"
+                android:id="@+id/layoutBluetooth"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
@@ -170,13 +170,13 @@
                     android:layout_margin="8dp"
                     android:contentDescription="@string/app_name"
                     android:padding="8dp"
-                    android:src="@drawable/water"/>
+                    android:src="@drawable/ic_baseline_bluetooth"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="@string/water_bill"
+                    android:text="@string/bluetooth"
                     android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold"/>

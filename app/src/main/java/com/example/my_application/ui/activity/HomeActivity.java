@@ -20,10 +20,10 @@ import java.util.ArrayList;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener{
     ArrayList barArrayList;
-    private Button logout;
+
     private LinearLayout financeBtn;
     private LinearLayout roommateBtn;
-    private LinearLayout waterBtn;
+    private LinearLayout bluetoothBtn;
     private LinearLayout electricityBtn;
     private LinearLayout homeBtn;
     private LinearLayout profileBtn;
@@ -41,8 +41,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         roommateBtn = (LinearLayout) findViewById(R.id.layoutRoommate);
         roommateBtn.setOnClickListener(this);
 
-        waterBtn = (LinearLayout) findViewById(R.id.layoutWater);
-        waterBtn.setOnClickListener(this);
+        bluetoothBtn = (LinearLayout) findViewById(R.id.layoutBluetooth);
+        bluetoothBtn.setOnClickListener(this);
 
         electricityBtn = (LinearLayout) findViewById(R.id.layoutElectricity);
         electricityBtn.setOnClickListener(this);
@@ -55,17 +55,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
         settingBtn = (LinearLayout) findViewById(R.id.layoutSetting);
         settingBtn.setOnClickListener(this);
-/*
-        //logout function
-        logout = (Button) findViewById(R.id.logOut);
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FirebaseAuth.getInstance().signOut();
-                startActivity(new Intent(HomeActivity.this, LoginActivity.class));
-            }
-        });
-*/
+
         //barchart view
         BarChart barChart = findViewById(R.id.barchart);
 
@@ -99,8 +89,8 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.layoutRoommate:
                 startActivity(new Intent(HomeActivity.this, RoommateActivity.class));
                 break;
-            case R.id.layoutWater:
-                startActivity(new Intent(HomeActivity.this, WaterActivity.class));
+            case R.id.layoutBluetooth:
+                startActivity(new Intent(HomeActivity.this, BluetoothActivity.class));
                 break;
             case R.id.layoutElectricity:
                 startActivity(new Intent(HomeActivity.this, ElectricityActivity.class));
