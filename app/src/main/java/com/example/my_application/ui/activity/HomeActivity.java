@@ -19,7 +19,6 @@ import com.github.mikephil.charting.utils.ColorTemplate;
 import java.util.ArrayList;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener{
-    ArrayList barArrayList;
 
     private LinearLayout financeBtn;
     private LinearLayout roommateBtn;
@@ -55,30 +54,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
         settingBtn = (LinearLayout) findViewById(R.id.layoutSetting);
         settingBtn.setOnClickListener(this);
-
-        //barchart view
-        BarChart barChart = findViewById(R.id.barchart);
-
-        getData();
-
-        BarDataSet barDataSet = new BarDataSet(barArrayList, "Bill");
-        BarData barData = new BarData(barDataSet);
-        barChart.setData(barData);
-        barDataSet.setColors(ColorTemplate.COLORFUL_COLORS);
-        barDataSet.setValueTextColor(Color.BLACK);
-        barDataSet.setValueTextSize(16f);
-        barChart.getDescription().setEnabled(true);
     }
-
-    private void getData() {
-        barArrayList = new ArrayList();
-        barArrayList.add(new BarEntry(2f, 10));
-        barArrayList.add(new BarEntry(3f, 20));
-        barArrayList.add(new BarEntry(4f, 30));
-        barArrayList.add(new BarEntry(5f, 40));
-        barArrayList.add(new BarEntry(6f, 50));
-    }
-
 
     @Override
     public void onClick(View view) {
