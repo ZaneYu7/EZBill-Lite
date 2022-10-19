@@ -109,10 +109,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     } else {
                         user.sendEmailVerification();
                         Toast.makeText(LoginActivity.this, "Check your email to verify your account!", Toast.LENGTH_LONG).show();
+                        progressBar.setVisibility(View.GONE);
                     }
 
                 } else {
                     Toast.makeText(LoginActivity.this, "Failed to login! Please check your credentials", Toast.LENGTH_LONG).show();
+                    progressBar.setVisibility(View.GONE);
                 }
             }
         });

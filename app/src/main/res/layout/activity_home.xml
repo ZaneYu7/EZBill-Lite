@@ -40,22 +40,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/textHello"
             app:layout_constraintTop_toTopOf="parent"/>
-<!--
-        <Button
-            android:id="@+id/logOut"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:backgroundTint="#0E86D4"
-            android:text="Logout"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@id/textHello"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/textHello"
-            app:layout_constraintVertical_bias="0.214" />
--->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -66,7 +51,6 @@
             android:background="@drawable/white_rectangle_background"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent">
-            <!--app:layout_constraintTop_toBottomOf="@id/logOut"-->
 
         </LinearLayout>
 
@@ -88,7 +72,7 @@
                 android:id="@+id/layoutFinance"
                 android:layout_width="171dp"
                 android:layout_height="172dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="92dp"
                 android:background="@drawable/white_rectangle_background"
                 android:gravity="center"
                 android:orientation="vertical"
@@ -121,14 +105,14 @@
                 android:id="@+id/layoutRoommate"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="92dp"
                 android:background="@drawable/white_rectangle_background"
                 android:gravity="center"
                 android:orientation="vertical"
-                app:layout_constraintStart_toEndOf="@id/layoutFinance"
                 android:padding="15dp"
                 app:layout_constraintDimensionRatio="H, 1:1"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/layoutFinance"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <ImageView
@@ -137,7 +121,7 @@
                     android:layout_margin="8dp"
                     android:contentDescription="@string/app_name"
                     android:padding="8dp"
-                    android:src="@drawable/roommate"/>
+                    android:src="@drawable/roommate" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -146,7 +130,7 @@
                     android:text="@string/roommate"
                     android:textColor="@color/black"
                     android:textSize="20sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -154,13 +138,14 @@
                 android:id="@+id/layoutBluetooth"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="60dp"
                 android:background="@drawable/white_rectangle_background"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="15dp"
                 app:layout_constraintDimensionRatio="H, 1:1"
                 app:layout_constraintEnd_toStartOf="@id/layoutRoommate"
+                app:layout_constraintHorizontal_bias="0.511"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/layoutFinance">
 
@@ -170,7 +155,7 @@
                     android:layout_margin="8dp"
                     android:contentDescription="@string/app_name"
                     android:padding="8dp"
-                    android:src="@drawable/ic_baseline_bluetooth"/>
+                    android:src="@drawable/ic_baseline_bluetooth" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -179,7 +164,7 @@
                     android:text="@string/bluetooth"
                     android:textColor="@color/black"
                     android:textSize="20sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -187,14 +172,15 @@
                 android:id="@+id/layoutElectricity"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="60dp"
                 android:background="@drawable/white_rectangle_background"
                 android:gravity="center"
                 android:orientation="vertical"
-                app:layout_constraintStart_toEndOf="@id/layoutFinance"
                 android:padding="15dp"
                 app:layout_constraintDimensionRatio="H, 1:1"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.511"
+                app:layout_constraintStart_toEndOf="@id/layoutFinance"
                 app:layout_constraintTop_toBottomOf="@id/layoutRoommate">
 
                 <ImageView
@@ -203,7 +189,7 @@
                     android:layout_margin="8dp"
                     android:contentDescription="@string/app_name"
                     android:padding="8dp"
-                    android:src="@drawable/electricity"/>
+                    android:src="@drawable/electricity" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -212,25 +198,16 @@
                     android:text="@string/electricity_bill"
                     android:textColor="@color/black"
                     android:textSize="20sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
-
-    <com.github.mikephil.charting.charts.BarChart
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="445dp"
-        android:layout_marginBottom="45dp"
-        android:id="@+id/barchart" />
-
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        app:layout_constraintTop_toBottomOf="@id/barchart"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <com.google.android.material.bottomappbar.BottomAppBar
