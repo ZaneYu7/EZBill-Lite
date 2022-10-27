@@ -11,15 +11,23 @@
         android:id="@+id/linear_ll"
         android:orientation="horizontal">
 
+        <ImageView
+            android:id="@+id/ac_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_arrow_back"/>
+
+
         <TextView
-            android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
             android:text="Account Settings"
-            android:textSize="16dp"
-            android:textStyle="bold"
             android:textColor="@color/black"
-            android:gravity="center"/>
+            android:textSize="16dp"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <View

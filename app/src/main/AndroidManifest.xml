@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.my_application">
+    package="com.example.EzBill">
 
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
@@ -11,11 +15,12 @@
     <uses-feature
         android:name="android.hardware.bluetooth_le"
         android:required="true" />
-
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
 
     <application
-        android:name=".App"
+        android:name="com.example.EzBill.App"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -25,44 +30,47 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.My_Application"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="ocr" />
         <activity
-            android:name=".ui.activity.EditProfileActivity"
+            android:name="com.example.EzBill.ui.activity.EditProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activity.ForgotPassword"
+            android:name="com.example.EzBill.ui.activity.ForgotPassword"
             android:exported="false" />
         <activity
-            android:name=".ui.activity.ElectricityActivity"
+            android:name="com.example.EzBill.ui.activity.ElectricityActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activity.BluetoothActivity"
+            android:name="com.example.EzBill.ui.activity.BluetoothActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activity.RoommateActivity"
+            android:name="com.example.EzBill.ui.activity.RoommateActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activity.FinanceActivity"
+            android:name="com.example.EzBill.ui.activity.FinanceActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activity.SettingActivity"
+            android:name="com.example.EzBill.ui.activity.SettingActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activity.ProfileActivity"
+            android:name="com.example.EzBill.ui.activity.ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activity.MainActivity"
+            android:name="com.example.EzBill.ui.activity.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activity.RegisterActivity"
+            android:name="com.example.EzBill.ui.activity.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activity.HomeActivity"
+            android:name="com.example.EzBill.ui.activity.HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activity.LoginActivity"
+            android:name="com.example.EzBill.ui.activity.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activity.SplashActivity"
+            android:name="com.example.EzBill.ui.activity.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -70,7 +78,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.ControlActivity" />
+        <activity android:name="com.example.EzBill.ui.activity.ControlActivity" />
     </application>
 
 </manifest>
