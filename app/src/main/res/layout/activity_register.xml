@@ -13,29 +13,28 @@
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-black"
         android:text="EzBill"
+        android:textAlignment="center"
         android:textColor="#ffffff"
         android:textSize="48sp"
-        android:textAlignment="center"
         android:textStyle="bold"
-        android:fontFamily="sans-serif-black"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/fullname"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:layout_marginTop="40dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
         android:layout_marginRight="20dp"
         android:background="#E6E6E6"
         android:hint="Enter your full name"
         android:paddingLeft="8dp"
-        android:textColorHint="#808080"
-        />
+        android:textColorHint="#808080" />
 
     <EditText
         android:id="@+id/username"
@@ -90,15 +89,16 @@
         android:paddingLeft="8dp"
         android:textColorHint="#808080"
         />
+
     <Button
         android:id="@+id/btn_register"
+        style="@style/button_large_black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="60dp"
-        android:layout_marginRight="60dp"
         android:layout_marginTop="35dp"
-        android:text="Register"
-        style="@style/button_large_black"/>
+        android:layout_marginRight="60dp"
+        android:text="Register" />
 
 
 </LinearLayout>
