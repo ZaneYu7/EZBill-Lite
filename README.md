@@ -1,5 +1,5 @@
 # EZBill-Lite
-- An Android mobile app based on Java and Firebase. The app has a sign up/in function.
+- An Android mobile app based on Java and Firebase.
 > 
 - It can connect the bluetooth sensor and also can control it. 
 > 
